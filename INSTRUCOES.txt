@@ -1,0 +1,28 @@
+SEMÁFORO DO BARULHO - PROJETO COMPLETO
+
+1. Extraia todos os arquivos deste ZIP para uma pasta.
+
+2. IMPORTANTE: para o microfone funcionar, não abra o index.html apenas com dois cliques.
+   O navegador pode bloquear o acesso ao microfone em arquivos file://.
+
+3. NO WINDOWS:
+   - Se você tiver Python instalado, dê duplo clique em INICIAR_SERVIDOR.bat.
+   - O navegador deverá abrir em http://localhost:8000
+   - Caso não abra automaticamente, digite http://localhost:8000 no navegador.
+
+4. Clique em "Ativar microfone".
+
+5. Quando o navegador perguntar se pode usar o microfone, escolha PERMITIR.
+
+6. Opcional: deixe a sala em silêncio e clique em "Calibrar silêncio" por 3 segundos.
+
+7. O semáforo funciona assim:
+   VERDE    = até 30%   - sala tranquila
+   AMARELO  = 30% a 60% - atenção ao barulho
+   VERMELHO = acima de 60% - barulho alto
+
+OBSERVAÇÕES:
+- O projeto não grava nem envia o áudio.
+- O cálculo é feito localmente no navegador.
+- A porcentagem é uma escala relativa, não uma medição profissional em decibéis.
+- Celulares e computadores possuem microfones diferentes, por isso a calibração ajuda.

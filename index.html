@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1565c0">
+  <title>Semáforo do Barulho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>🔊 Semáforo do Barulho</h1>
+      <p>Use o microfone deste aparelho para acompanhar o nível de ruído da sala.</p>
+    </header>
+
+    <section class="semaforo-card">
+      <div class="semaforo" aria-label="Semáforo do nível sonoro">
+        <div id="luz-verde" class="luz verde"></div>
+        <div id="luz-amarela" class="luz amarela"></div>
+        <div id="luz-vermelha" class="luz vermelha"></div>
+      </div>
+
+      <div id="emoji" class="emoji">🎤</div>
+      <h2 id="mensagem">Microfone desligado</h2>
+      <p id="nivel">Nível do som: 0%</p>
+
+      <div class="barra" role="progressbar" aria-label="Nível do som" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="barra-nivel"></div>
+      </div>
+
+      <button id="btn-microfone" type="button">🎙️ Ativar microfone</button>
+      <button id="btn-calibrar" type="button" class="secundario" disabled>⚙️ Calibrar silêncio</button>
+
+      <p id="status" class="status">Clique em “Ativar microfone” e permita o acesso quando o navegador solicitar.</p>
+    </section>
+
+    <section class="legenda">
+      <div><span class="bolinha verde-bg"></span><strong>Silencioso</strong><small>até 30%</small></div>
+      <div><span class="bolinha amarelo-bg"></span><strong>Atenção</strong><small>30% a 60%</small></div>
+      <div><span class="bolinha vermelho-bg"></span><strong>Barulho alto</strong><small>acima de 60%</small></div>
+    </section>
+
+    <footer>
+      <p>🔒 O áudio não é gravado nem enviado. O navegador fornece apenas os dados necessários para medir o nível sonoro.</p>
+      <p>Observação: a escala é relativa e não representa decibéis calibrados.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

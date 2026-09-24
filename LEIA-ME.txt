@@ -1,0 +1,9 @@
+Arquivos do projeto:
+
+index.html          - estrutura da página
+style.css           - aparência e layout
+script.js           - captura e análise do microfone
+INSTRUCOES.txt      - instruções de instalação e uso
+INICIAR_SERVIDOR.bat- inicia servidor local no Windows
+
+O projeto utiliza somente HTML, CSS e JavaScript, sem bibliotecas externas.
